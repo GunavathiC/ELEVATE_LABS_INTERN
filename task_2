@@ -1,6 +1,7 @@
 Phishing Email Analysis Report
  ** Task Objective :
 The objective of this task is to analyze a suspicious email and identify phishing characteristics such as spoofed sender address, fake links, urgent language, and grammar errors.
+The goal was to identify phishing characteristics to raise awareness of common email threats.
 
 ** Sample Phishing Email (Text)
 From: PayPal Security Team <secure@paypall.com>

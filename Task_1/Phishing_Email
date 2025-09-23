@@ -1,1 +1,29 @@
+* Task 1 - Scan Local Network for Open Ports using Nmap
 
+* Objective : 
+The objective of this task was to scan the devices on my local network to discover open ports and understand network service exposure and security risks.
+
+* Tools Used
+- Nmap (network scanning tool)
+- Wireshark (for packet analysis)
+
+## Steps Performed
+
+1. Installed Nmap from the official website.
+2. Found my local network IP range using command prompt (`ipconfig`).
+3. Ran a TCP SYN scan on the local IP range using:
+         nmap -sS 192.__________ (IP address)
+4. Recorded the IP addresses and open ports discovered from the scan.
+5. Used Wireshark to capture and analyze network packets corresponding to open ports.
+6. Researched common services running on the open ports:
+- Port 80: HTTP (Web server)
+- Port 22: SSH (Secure shell access)
+- Port 443: HTTPS (Secure web)
+7. Identified potential security risks from open ports such as unauthorized access, data leakage, DoS attacks, and malware entry.
+
+* Conclusion
+This task helped me understand basic network reconnaissance techniques and the importance of network security related to open ports.
+
+## Files Included
+- `images task_1` : Nmap scan output with discovered hosts and ports
+- Packet capture files and Wireshark analysis screenshots

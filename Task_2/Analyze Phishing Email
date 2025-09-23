@@ -1,0 +1,45 @@
+Phishing Email Analysis Report
+ ** Task Objective :
+The objective of this task is to analyze a suspicious email and identify phishing characteristics such as spoofed sender address, fake links, urgent language, and grammar errors.
+The goal was to identify phishing characteristics to raise awareness of common email threats.
+
+** Sample Phishing Email (Text)
+From: PayPal Security Team <secure@paypall.com>
+Subject: Urgent: Your Account Will Be Suspended!
+
+Dear Customer,  
+
+We have detected unusual activity in your PayPal account.  
+For your protection, your account will be suspended within 24 hours unless you verify your identity.  
+
+Click the link below to restore access:  
+http://secure-login.paypal.com.verify-user.ru  
+
+Thank you for your cooperation,  
+PayPal Support Team
+
+
+⚠️ Phishing Indicators Found
+
+Fake Sender Address
+Email came from secure@paypall.com instead of paypal.com.
+Extra “l” in “paypall” shows spoofing.
+Suspicious Links
+Link text looks like PayPal, but the real link is http://secure-login.paypal.com.verify-user.ru (not the official PayPal site).
+Urgent/Threatening Language
+“Your account will be suspended within 24 hours” → creates panic.
+Grammar & Spelling Issues
+“Click the link below to restore access” and poor formatting are signs of phishing.
+
+Generic Greeting
+Email says “Dear Customer” instead of using your real name.
+
+**Conclusion
+
+This email is a clear phishing attempt.
+The sender is spoofed.
+The links are malicious.
+The tone is urgent and threatening.
+The language and structure are unprofessional.
+
+**Final Note: Always check the sender, hover over links before clicking, and never share login credentials via suspicious emails.

@@ -1,0 +1,17 @@
+Ojective :
+This project demonstrates how to manage basic Windows Firewall rules to control network traffic. 
+The steps below show how to add, test, and remove a rule blocking inbound traffic on port 23 (Telnet), using the built-in Windows Firewall interface.
+
+Steps Performed:
+Open Windows Firewall Settings
+Viewed Current Inbound Rules
+Added a Rule to Block Port 23 (Telnet)
+Nameded the rule as  Block Telnet Port 23
+Tested the Rule using netstat -a -n (in cmd prompt) to check active ports.
+Confirmed port 23 was not in use (no Telnet server running), so the rule is ready to block any future inbound traffic on port 23.
+Removed the Test Rule and confirmed.
+
+What I Learned :
+Windows Firewall uses rules to allow or block network traffic based on ports, programs, or IP addresses.
+We can create, test, and remove rules to control our computer’s security.
+Even if a port isn’t currently in use, blocking it prevents future unwanted connections.

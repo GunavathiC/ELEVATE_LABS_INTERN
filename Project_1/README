@@ -1,0 +1,34 @@
+Vulnerability Scanner
+
+A simple, command-line vulnerability scanner to analyze web applications for common security issues and export scan reports in CSV, JSON, and HTML formats.
+
+**Features:
+Scans target URLs for security vulnerabilities (XSS, SQLi, open redirects, and more)
+
+Command-line interface for easy use
+
+Generates scan results in multiple formats: CSV, JSON, HTML
+
+Color-coded console output for clarity
+
+Safe for demos and educational security testing
+
+**Requirements:
+Python 3.7+
+
+**Install dependencies:
+pip install -r requirements.txt
+
+
+**TO RUN
+python scanner.py <url>
+Example:
+python scanner.py https://juice-shop.herokuapp.com
+                  http://testphp.vulnweb.com
+                  https://www.google.com
+                  https://httpbin.org
+                
+**The scan results will be saved as:
+scan_report.csv
+scan_report.json
+scan_report.html

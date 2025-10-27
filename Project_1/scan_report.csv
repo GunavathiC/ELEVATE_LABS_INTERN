@@ -1,0 +1,5 @@
+cwe,description,header,severity,timestamp,type,url
+CWE-693,Missing X-Frame-Options,X-Frame-Options,medium,2025-10-26T15:50:09.892626,Missing Security Header,https://juice-shop.herokuapp.com
+CWE-693,Missing X-Content-Type-Options,X-Content-Type-Options,low,2025-10-26T15:50:09.892833,Missing Security Header,https://juice-shop.herokuapp.com
+CWE-693,Missing Strict-Transport-Security,Strict-Transport-Security,high,2025-10-26T15:50:09.892965,Missing Security Header,https://juice-shop.herokuapp.com
+CWE-693,Missing Content-Security-Policy,Content-Security-Policy,medium,2025-10-26T15:50:09.893108,Missing Security Header,https://juice-shop.herokuapp.com

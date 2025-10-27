@@ -1,0 +1,43 @@
+{
+  "scan_date": "2025-10-26T15:50:09.895333",
+  "target": "https://juice-shop.herokuapp.com",
+  "total": 4,
+  "vulnerabilities": [
+    {
+      "type": "Missing Security Header",
+      "severity": "medium",
+      "description": "Missing X-Frame-Options",
+      "url": "https://juice-shop.herokuapp.com",
+      "timestamp": "2025-10-26T15:50:09.892626",
+      "header": "X-Frame-Options",
+      "cwe": "CWE-693"
+    },
+    {
+      "type": "Missing Security Header",
+      "severity": "low",
+      "description": "Missing X-Content-Type-Options",
+      "url": "https://juice-shop.herokuapp.com",
+      "timestamp": "2025-10-26T15:50:09.892833",
+      "header": "X-Content-Type-Options",
+      "cwe": "CWE-693"
+    },
+    {
+      "type": "Missing Security Header",
+      "severity": "high",
+      "description": "Missing Strict-Transport-Security",
+      "url": "https://juice-shop.herokuapp.com",
+      "timestamp": "2025-10-26T15:50:09.892965",
+      "header": "Strict-Transport-Security",
+      "cwe": "CWE-693"
+    },
+    {
+      "type": "Missing Security Header",
+      "severity": "medium",
+      "description": "Missing Content-Security-Policy",
+      "url": "https://juice-shop.herokuapp.com",
+      "timestamp": "2025-10-26T15:50:09.893108",
+      "header": "Content-Security-Policy",
+      "cwe": "CWE-693"
+    }
+  ]
+}

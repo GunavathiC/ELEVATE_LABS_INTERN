@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <section class="summary">
+        <h2>Threat Summary</h2>
+        <p>Total Threats: {{ summary.total_threats }}</p>
+        <p>Critical: {{ summary.critical }}</p>
+        <p>High: {{ summary.high }}</p>
+        <p>Medium: {{ summary.medium }}</p>
+        <p>Low: {{ summary.low }}</p>
+        <canvas id="levelChart" width="400" height="190"></canvas>
+        <ul id="recommend">
+            {% for rec in recommendations %}
+            <li>{{ rec }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section>
+        <div id="map" style="height: 180px;width:92%;margin-bottom:12px;"></div>
+    </section>
+    <section class="search">
+        <h2>Real-Time Threat Lookup</h2>
+        <input type="text" id="threat-query" placeholder="IP / Domain / Hash"/>
+        <button id="search-btn">Search</button>
+        <pre id="lookup-result"></pre>
+    </section>
+    <section>
+        <h2>Submit a Threat</h2>
+        <form id="add-form">
+            <input type="text" id="add-name" placeholder="IP/Domain/Hash" required>
+            <select id="add-type">
+                <option>Malware</option><option>Phishing</option><option>Botnet</option>
+            </select>
+            <select id="add-level">
+                <option>Critical</option><option>High</option><option>Medium</option><option>Low</option>
+            </select>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+    <section class="threat-feed">
+        <h2>Threat Feed</h2>
+        <table id="feed-table">
+            <thead>
+                <tr><th>Name</th><th>Type</th><th>Level</th><th>Timestamp</th></tr>
+            </thead>
+            <tbody>
+            {% for threat in threat_feed %}
+            <tr onclick="showDetails('{{ threat.name }}','{{ threat.type }}','{{ threat.level }}','{{ threat.timestamp }}')">
+                <td>{{ threat.name }}</td>
+                <td>{{ threat.type }}</td>
+                <td>{{ threat.level }}</td>
+                <td>{{ threat.timestamp }}</td>
+                print('FEED contents:', FEED)
+
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    <section class="actions">
+        <button onclick="location.href='/export/json'">Export JSON</button>
+        <button onclick="location.href='/export/csv'">Export CSV</button>
+        <button onclick="location.href='/export/pdf'">Export PDF</button>
+    </section>
+</div>
+<div id="modal" style="display:none;">
+    <div id="modal-content"></div>
+    <button onclick="closeModal()">Close</button>
+</div>
+<script>
+const chartData = {{ chart_data | safe }};
+const geoPoints = {{ geo_points | safe }};
+</script>
+{% endblock %}

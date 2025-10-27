@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login | CTI OPS PANEL</title>
+<link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+    <form method="POST" style="margin:100px auto; width:320px; padding:20px 30px; background:#011500; color:#33ff33; border-radius:9px;">
+        <h2 style="color:#33ff33;">SOC Login</h2>
+        <input type="text" required name="username" placeholder="Username"/><br><br>
+        <input type="password" required name="password" placeholder="Password"/><br><br>
+        <button type="submit">Login</button>
+        <div style="margin-top:8px; color:#ff5050">{{ msg }}</div>
+    </form>
+</body>
+</html>

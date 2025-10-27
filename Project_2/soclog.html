@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>SOC Analyst Activity Log (Audit Trail)</h2>
+<ul style="background:#101010;color:#90ff90;">
+    {% for l in log[::-1] %}
+    <li style="margin:3px 0;">{{ l }}</li>
+    {% endfor %}
+</ul>
+<a href="/">Back to Dashboard</a>
+{% endblock %}
